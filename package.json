@@ -6,7 +6,7 @@
   "moduel": "index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prebuild": "rm -rf build && mkdir build && rollup --banner \"$(preamble)\" -f umd -n d3 -o build/d3-logictree.js -- index.js",
+    "prebuild": "rm -rf build && mkdir build && rollup --banner \"$(preamble)\" -f umd -n d3.logictree -o build/d3-logictree.js -- index.js",
     "build": "uglifyjs --preamble \"$(preamble)\" build/d3-logictree.js -c -m -o build/d3-logictree.min.js"
   },
   "repository": {
