@@ -1,0 +1,17 @@
+root = true
+
+[*]
+# we recommend you to keep these unchanged
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+indent_style = space
+
+# change these settings to your own preference
+[*.{js|json}]
+indent_size = 2
+indent_style = space
+
+[*.md]
+trim_trailing_whitespace = false

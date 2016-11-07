@@ -1,0 +1,21 @@
+{
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "globals": {
+    "expect": true
+  },
+  "root": true,
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "rules": {
+    "prefer-const": 1,
+    "no-cond-assign": 0,
+    "no-constant-condition": 0
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "d3-logictree",
+  "version": "0.0.1",
+  "description": "Layout algorithms for visualizing logic tree data.",
+  "main": "build/d3-logictree.js",
+  "moduel": "index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rm -rf build && mkdir build && rollup --banner \"$(preamble)\" -f umd -n d3 -o build/d3-logictree.js -- index.js",
+    "build": "uglifyjs --preamble \"$(preamble)\" build/d3-logictree.js -c -m -o build/d3-logictree.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomowang/d3-logictree.git"
+  },
+  "keywords": [
+    "d3",
+    "d3-module",
+    "layout",
+    "logic tree"
+  ],
+  "author": {
+    "name": "Tomo Wang",
+    "url": "http://tomo.wang"
+  },
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/tomowang/d3-logictree/issues"
+  },
+  "homepage": "https://github.com/tomowang/d3-logictree#readme",
+  "devDependencies": {
+    "eslint": "^3.2.2",
+    "package-preamble": "0.0.2",
+    "rollup": "^0.36.3",
+    "uglify-js": "^2.7.4"
+  }
+}
